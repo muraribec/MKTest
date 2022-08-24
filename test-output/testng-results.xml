@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="90" started-at="2022-08-23T09:54:02 IST" finished-at="2022-08-23T09:54:02 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="90" started-at="2022-08-23T09:54:02 IST" finished-at="2022-08-23T09:54:02 IST">
+      <class name="com.qa.facebook.tests.LoginPageTestWithDP">
+        <test-method status="SKIP" signature="createNewContactTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.facebook.tests.LoginPageTestWithDP@3ecd23d9]" name="createNewContactTest" duration-ms="0" started-at="2022-08-23T09:54:02 IST" data-provider="getContactsData" finished-at="2022-08-23T09:54:02 IST">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream
+at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:222)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+at com.qa.facebook.util.ExcelUtil.getTestData(ExcelUtil.java:23)
+at com.qa.facebook.tests.LoginPageTestWithDP.getContactData(LoginPageTestWithDP.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 25 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream
+at java.net.URLClassLoader.findClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewContactTest -->
+      </class> <!-- com.qa.facebook.tests.LoginPageTestWithDP -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
